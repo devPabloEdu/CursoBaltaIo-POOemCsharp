@@ -8,11 +8,15 @@ namespace POOemCsharp
             //OBJETO SEMPRE É UM TIPO DE REFERENCIA
 
         }
-        class Customer
-        {
-            //uma classe é um molde
-            string name;
-        }
+    }
+
+    class Pagamento
+    {
+        //propriedades
+        DateTime Vencimento;
+        //metodos
+        void Pagar(){}
+
     }
     
 }
