@@ -15,8 +15,13 @@ namespace POOemCsharp
         //propriedades = variaveis
         DateTime Vencimento;
         //metodos = funções
-        void Pagar(){}
+        void Pagar(){
+            ConsultarSaldoDoCartão();
+        }
 
+        private void ConsultarSaldoDoCartão(){
+
+        }
     }
     
 }
