@@ -12,9 +12,9 @@ namespace POOemCsharp
 
     class Pagamento
     {
-        //propriedades
+        //propriedades = variaveis
         DateTime Vencimento;
-        //metodos
+        //metodos = funções
         void Pagar(){}
 
     }
