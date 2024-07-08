@@ -5,14 +5,13 @@ namespace POOemCsharp
     {
         static void Main(string[] args)
         {
-            var customer = new Customer();
-            customer.Name ="pablo";
-            Console.WriteLine(customer.Name);
-        }
+            //OBJETO SEMPRE É UM TIPO DE REFERENCIA
 
-        struct Customer
+        }
+        class Customer
         {
-            public string Name;
+            //uma classe é um molde
+            string name;
         }
     }
     
