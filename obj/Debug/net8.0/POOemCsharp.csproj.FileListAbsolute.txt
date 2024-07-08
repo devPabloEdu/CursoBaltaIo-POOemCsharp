@@ -1,0 +1,15 @@
+C:\Users\Admin\Desktop\programação\POOemCsharp\bin\Debug\net8.0\POOemCsharp.exe
+C:\Users\Admin\Desktop\programação\POOemCsharp\bin\Debug\net8.0\POOemCsharp.deps.json
+C:\Users\Admin\Desktop\programação\POOemCsharp\bin\Debug\net8.0\POOemCsharp.runtimeconfig.json
+C:\Users\Admin\Desktop\programação\POOemCsharp\bin\Debug\net8.0\POOemCsharp.dll
+C:\Users\Admin\Desktop\programação\POOemCsharp\bin\Debug\net8.0\POOemCsharp.pdb
+C:\Users\Admin\Desktop\programação\POOemCsharp\obj\Debug\net8.0\POOemCsharp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\programação\POOemCsharp\obj\Debug\net8.0\POOemCsharp.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\programação\POOemCsharp\obj\Debug\net8.0\POOemCsharp.AssemblyInfo.cs
+C:\Users\Admin\Desktop\programação\POOemCsharp\obj\Debug\net8.0\POOemCsharp.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\programação\POOemCsharp\obj\Debug\net8.0\POOemCsharp.sourcelink.json
+C:\Users\Admin\Desktop\programação\POOemCsharp\obj\Debug\net8.0\POOemCsharp.dll
+C:\Users\Admin\Desktop\programação\POOemCsharp\obj\Debug\net8.0\refint\POOemCsharp.dll
+C:\Users\Admin\Desktop\programação\POOemCsharp\obj\Debug\net8.0\POOemCsharp.pdb
+C:\Users\Admin\Desktop\programação\POOemCsharp\obj\Debug\net8.0\POOemCsharp.genruntimeconfig.cache
+C:\Users\Admin\Desktop\programação\POOemCsharp\obj\Debug\net8.0\ref\POOemCsharp.dll
