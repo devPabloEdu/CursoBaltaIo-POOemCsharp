@@ -5,6 +5,12 @@ namespace POOemCsharp
     {
         static void Main(string[] args)
         {
+            var pagamentoBoleto = new PagamentoBoleto();
+            pagamentoBoleto.Pagar();
+            pagamentoBoleto.Vencimento = DateTime.Now;
+            pagamentoBoleto.NumeroBoleto = "123";
+            var pagamento = new Pagamento();
+            pagamento.Vencimento = DateTime.Now;
             //OBJETO SEMPRE É UM TIPO DE REFERENCIA
 
         }
@@ -13,15 +19,14 @@ namespace POOemCsharp
     class Pagamento
     {
         //propriedades = variaveis
-        DateTime Vencimento;
+        public DateTime Vencimento;
         //metodos = funções
-        void Pagar(){
-            ConsultarSaldoDoCartão();
-        }
+        public void Pagar(){}
+    }
 
-        private void ConsultarSaldoDoCartão(){
-
-        }
+    class PagamentoBoleto : Pagamento
+    {
+        public string NumeroBoleto;
     }
     
 }
