@@ -26,9 +26,6 @@ namespace POOemCsharp
             dataPagamento = DateTime.Now;
             
         }
-        //propriedades = variaveis
-        // public DateTime Vencimento;
-        //metodos = funções
         public DateTime Vencimento { get; set; }
 
         private DateTime _DataDePagamento;
