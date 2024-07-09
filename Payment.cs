@@ -1,7 +1,7 @@
 namespace Payments
 {
-    public class Payment
+    public partial class Payment
     {
-        
+
     }
 }
