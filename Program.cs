@@ -19,6 +19,13 @@ namespace POOemCsharp
         //temos em c# os seguintes modificadores : private, protected, internal e public.
     class Pagamento
     {
+        public DateTime dataPagamento { get; set; }
+        public Pagamento()
+        {
+            Console.WriteLine("iniciando o pagamento.");
+            dataPagamento = DateTime.Now;
+            
+        }
         //propriedades = variaveis
         // public DateTime Vencimento;
         //metodos = funções
