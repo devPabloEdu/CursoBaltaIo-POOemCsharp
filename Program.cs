@@ -5,10 +5,10 @@ namespace POOemCsharp
     {
         static void Main(string[] args)
         {
-            var pagamentoBoleto = new PagamentoBoleto();
-            pagamentoBoleto.Pagar();
-            pagamentoBoleto.Vencimento = DateTime.Now;
-            pagamentoBoleto.NumeroBoleto = "123";
+            // var pagamentoBoleto = new PagamentoBoleto();
+            // pagamentoBoleto.Pagar();
+            // pagamentoBoleto.Vencimento = DateTime.Now;
+            // pagamentoBoleto.NumeroBoleto = "123";
             var pagamento = new Pagamento();
             pagamento.Vencimento = DateTime.Now;
             //OBJETO SEMPRE É UM TIPO DE REFERENCIA
@@ -30,26 +30,26 @@ namespace POOemCsharp
         }
     }
 
-    class PagamentoBoleto : Pagamento
-    {
-        public string NumeroBoleto;
+    // class PagamentoBoleto : Pagamento
+    // {
+    //     public string NumeroBoleto;
 
-        public override void Pagar()
-        {
-           //regra do boleto
-        }
+    //     public override void Pagar()
+    //     {
+    //        //regra do boleto
+    //     }
 
-    }
+    // }
 
     
-    class PagamentoCartao : Pagamento
-    {
-        public string NumeroCartao;
+    // class PagamentoCartao : Pagamento
+    // {
+    //     public string NumeroCartao;
 
-        public override void Pagar()
-        {
-           //regra do cartão
-        }
-    }
+    //     public override void Pagar()
+    //     {
+    //        //regra do cartão
+    //     }
+    // }
     
 }
