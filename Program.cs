@@ -20,8 +20,9 @@ namespace POOemCsharp
     class Pagamento
     {
         //propriedades = variaveis
-        public DateTime Vencimento;
+        // public DateTime Vencimento;
         //metodos = funções
+        public DateTime Vencimento { get; set; }
         public virtual void Pagar(){}
 
         public override string ToString()
