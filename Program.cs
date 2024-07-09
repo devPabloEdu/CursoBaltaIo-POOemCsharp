@@ -24,11 +24,11 @@ namespace POOemCsharp
         //metodos = funções
         public DateTime Vencimento { get; set; }
 
-        private DateTime DataDePagamento;
+        private DateTime _DataDePagamento;
         public DateTime MyProperty
         {
-            get { return DataDePagamento; }
-            set { DataDePagamento = value; }
+            get { return _DataDePagamento; }
+            set { _DataDePagamento = value; }
         }
         
         public virtual void Pagar(){}
