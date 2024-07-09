@@ -9,7 +9,7 @@ namespace POOemCsharp
             // pagamentoBoleto.Pagar();
             // pagamentoBoleto.Vencimento = DateTime.Now;
             // pagamentoBoleto.NumeroBoleto = "123";
-            var pagamento = new Pagamento();
+            var pagamento = new PagamentoBoleto();
             pagamento.Vencimento = DateTime.Now;
             //OBJETO SEMPRE É UM TIPO DE REFERENCIA
 
@@ -17,7 +17,7 @@ namespace POOemCsharp
         }
     }
         //temos em c# os seguintes modificadores : private, protected, internal e public.
-    class Pagamento
+    public abstract class Pagamento
     {
         public DateTime dataPagamento { get; set; }
         public Pagamento()
@@ -46,16 +46,16 @@ namespace POOemCsharp
         }
     }
 
-    // class PagamentoBoleto : Pagamento
-    // {
-    //     public string NumeroBoleto;
+     class PagamentoBoleto : Pagamento
+    {
+        public string NumeroBoleto;
 
-    //     public override void Pagar()
-    //     {
-    //        //regra do boleto
-    //     }
+       public override void Pagar()
+        {
+           //regra do boleto
+        }
 
-    // }
+    }
 
     
     // class PagamentoCartao : Pagamento
