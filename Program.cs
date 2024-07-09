@@ -23,6 +23,14 @@ namespace POOemCsharp
         // public DateTime Vencimento;
         //metodos = funções
         public DateTime Vencimento { get; set; }
+
+        private DateTime DataDePagamento;
+        public DateTime MyProperty
+        {
+            get { return DataDePagamento; }
+            set { DataDePagamento = value; }
+        }
+        
         public virtual void Pagar(){}
 
         public override string ToString()
