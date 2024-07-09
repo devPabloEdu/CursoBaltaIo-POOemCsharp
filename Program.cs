@@ -33,6 +33,9 @@ namespace POOemCsharp
         
         public virtual void Pagar(){}
 
+        public virtual void Pagar(string numero){}
+
+
         public override string ToString()
         {
             return Vencimento.ToString("dd/mm/yy");
