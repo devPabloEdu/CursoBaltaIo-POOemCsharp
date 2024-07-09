@@ -28,5 +28,11 @@ namespace POOemCsharp
     {
         public string NumeroBoleto;
     }
+
+    
+    class PagamentoCartao : Pagamento
+    {
+        public string NumeroCartao;
+    }
     
 }
