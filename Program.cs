@@ -16,7 +16,7 @@ namespace POOemCsharp
             Console.WriteLine(pagamento.Vencimento);
         }
     }
-
+        //temos em c# os seguintes modificadores : private, protected, internal e public.
     class Pagamento
     {
         //propriedades = variaveis
