@@ -8,6 +8,8 @@ namespace POOemCsharp
             var person = new Person();
             person = new Personal();
             person = new Corporate();
+            var personCorporate = new Corporate();
+            personCorporate = (Corporate)person;
 
             // var pagamentoBoleto = new PagamentoBoleto();
             // pagamentoBoleto.Pagar();
