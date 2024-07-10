@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("POOemCsharp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+901b0dac58a84d82a7d9ceaded47bce84e63364c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1d65a474fa0d5edefabf89aa257cdc6715f659c4")]
 [assembly: System.Reflection.AssemblyProductAttribute("POOemCsharp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("POOemCsharp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
