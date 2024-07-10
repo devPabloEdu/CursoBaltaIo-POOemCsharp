@@ -7,7 +7,7 @@ namespace POOemCsharp
         {
             var personA = new Person(1, "Pablo Eduardo");
             var personB = new Person(1, "Pablo Eduardo");
-            Console.WriteLine(personA == personB);
+            Console.WriteLine(personA.Equals(personB));
 
             // var pagamentoBoleto = new PagamentoBoleto();
             // pagamentoBoleto.Pagar();
@@ -20,7 +20,7 @@ namespace POOemCsharp
             // Console.WriteLine(pagamento.Vencimento);
         }
     }
-    public class Person 
+    public class Person : IEquatable<Person>
     {
         public Person(int id, string nome)
         {
@@ -30,6 +30,12 @@ namespace POOemCsharp
         }
         public int Id { get; set; }
         public string Nome { get; set; }
+
+        public bool Equals(Person? other)
+        {
+            return Id == other.Id;
+            return Nome == other.Nome;
+        }
     }
     // public class Personal : Person
     // {
