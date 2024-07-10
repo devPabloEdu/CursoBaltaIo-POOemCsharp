@@ -5,6 +5,10 @@ namespace POOemCsharp
     {
         static void Main(string[] args)
         {
+            var person = new Person();
+            person = new Personal();
+            person = new Corporate();
+
             // var pagamentoBoleto = new PagamentoBoleto();
             // pagamentoBoleto.Pagar();
             // pagamentoBoleto.Vencimento = DateTime.Now;
@@ -18,14 +22,14 @@ namespace POOemCsharp
     }
     public class Person
     {
-        
+        public string Name { get; set; }
     }
-    public class Personal
+    public class Personal : Person
     {
         public string CPF { get; set; }
     }
 
-    public class Corporate
+    public class Corporate : Person
     {
         public string CNPJ { get; set; }
     }
