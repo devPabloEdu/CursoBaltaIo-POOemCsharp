@@ -5,11 +5,7 @@ namespace POOemCsharp
     {
         static void Main(string[] args)
         {
-            var person = new Person();
-            person = new Personal();
-            person = new Corporate();
-            var personCorporate = new Corporate();
-            personCorporate = (Corporate)person;
+            var person = new Person("Pablo Eduardo");
 
             // var pagamentoBoleto = new PagamentoBoleto();
             // pagamentoBoleto.Pagar();
@@ -22,19 +18,23 @@ namespace POOemCsharp
             // Console.WriteLine(pagamento.Vencimento);
         }
     }
-    public class Person
+    public class Person 
     {
+        public Person(string nome)
+        {
+            nome = nome;
+        }
         public string Name { get; set; }
     }
-    public class Personal : Person
-    {
-        public string CPF { get; set; }
-    }
+    // public class Personal : Person
+    // {
+    //     public string CPF { get; set; }
+    // }
 
-    public class Corporate : Person
-    {
-        public string CNPJ { get; set; }
-    }
+    // public class Corporate : Person
+    // {
+    //     public string CNPJ { get; set; }
+    // }
         //temos em c# os seguintes modificadores : private, protected, internal e public.
     // public abstract class Pagamento
     // {
