@@ -5,7 +5,9 @@ namespace POOemCsharp
     {
         static void Main(string[] args)
         {
-            var person = new Person("Pablo Eduardo");
+            var personA = new Person(1, "Pablo Eduardo");
+            var personB = new Person(1, "Pablo Eduardo");
+            Console.WriteLine(personA == personB);
 
             // var pagamentoBoleto = new PagamentoBoleto();
             // pagamentoBoleto.Pagar();
@@ -20,11 +22,14 @@ namespace POOemCsharp
     }
     public class Person 
     {
-        public Person(string nome)
+        public Person(int id, string nome)
         {
-            nome = nome;
+            Id = id;
+            Nome = nome;
+            
         }
-        public string Name { get; set; }
+        public int Id { get; set; }
+        public string Nome { get; set; }
     }
     // public class Personal : Person
     // {
