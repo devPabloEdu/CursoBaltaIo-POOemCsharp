@@ -3,19 +3,32 @@ namespace POOemCsharp
 {
     class Program
     {
-        static void RealizarPagamento(double valor)
-        {
-            Console.WriteLine($"Pago o valor de {valor}");
-        }
         static void Main(string[] args)
         {
-            //delegades => Anonymous Methods
-            var pagar = new Pagamento.Pagar(RealizarPagamento);
-            pagar(20);
+            var room = new Room(3);
         }
-    }
-    
-    public class Pagamento{
-        public delegate void Pagar(double valor);
+        public class Room
+        {
+            public Room(int seats)
+            {
+                Seats = seats;
+                seatsInUse = 0;
+            }
+
+            private int seatsInUse = 0;
+            public int Seats {get; set;}
+
+            public void ReserveSeat()
+            {
+                seatsInUse++;
+                if(seatsInUse >= Seats)
+                {
+                    //evento fechado
+                    
+                } else {
+                    Console.WriteLine("Assento reservado");
+                }
+            }
+        }
     }
 }
