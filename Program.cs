@@ -6,6 +6,16 @@ namespace POOemCsharp
         static void Main(string[] args)
         {
             var room = new Room(3);
+            room.RoomSoldOutEvent += OnRoomSoldOut;
+            room.ReserveSeat();
+            room.ReserveSeat();
+            room.ReserveSeat();
+            room.ReserveSeat();
+            room.ReserveSeat();
+            room.ReserveSeat();
+        }
+        static void OnRoomSoldOut(object sender, EventArgs e){
+            Console.WriteLine("Sala lotada!");
         }
         public class Room
         {
@@ -24,10 +34,18 @@ namespace POOemCsharp
                 if(seatsInUse >= Seats)
                 {
                     //evento fechado
-                    
+                    OnRoomSoldOut(EventArgs.Empty);
+
                 } else {
                     Console.WriteLine("Assento reservado");
                 }
+            }
+            public event EventHandler RoomSoldOutEvent;
+
+            protected virtual void OnRoomSoldOut(EventArgs e)
+            {
+                EventHandler handler = RoomSoldOutEvent;
+                handler?.Invoke(this, e);
             }
         }
     }
